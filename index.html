@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-work</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js" defer></script>
+    <link rel="icon" type="images/x-icon" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-wrapper">
+        
+        <div class="wrap-button">
+            <button class="main-button" id="btn">Кликни</button>
+        </div>
+
+        <div class="wrapper-modal-window">
+            <div class="modal-window">
+
+                <div class="window-info">
+                    <h1>Получитке набор файлов <br> для руководителя</h1>
+                    <!-- <img class="files-img" src="./images/files.PNG" alt=""> -->
+                    <div class="files-img">
+                        <img src="./images/filesimg/files1.PNG" alt="">
+                        <img src="./images/filesimg/files2.PNG" alt="">
+                        <img src="./images/filesimg/files3.PNG" alt="">
+                        <img src="./images/filesimg/files3.PNG" alt="">
+                        <img src="./images/filesimg/files3.PNG" alt="">
+                        <img src="./images/filesimg/files3.PNG" alt="">
+                        <img src="./images/filesimg/files3.PNG" alt="">
+                    </div>
+                    <img class="book-img" src="/images/book.PNG" alt="">
+                </div>
+
+                <div class="wrapper-form">
+                    <form class="main-form" id="form" action="./send.php" method="post" onsubmit="">
+                        <div class="wrap-input-mail">
+                            <p>Введите E-mail для получения файлов:</p>
+                            <input type="text" name="email" placeholder="E-mail">
+                        </div>
+
+                        <div class="wrap-input-phone">
+                            <p>Введите телефон для подтверждения доступа:</p>
+                            <input type="number"  name="phone" placeholder="+7 (000) 000-00-00"  required>
+                        </div> 
+
+                        <button class="button-submit-form">Скачать файлы<img class="button-arm-svg" src="./images/arm.svg" alt=""></button>
+
+                        <div class="modal-window-formats">
+                            <p>PDF 4,7MB</p>
+                            <p>DOC 0,8MB</p>
+                            <p>XLS 1,2MB</p>
+                        </div>
+                    </form>
+
+                    <div class="close-modal-window">
+                        <img class="close-img" id="close" src="./images/close.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
